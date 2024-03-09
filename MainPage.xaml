@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab4Calculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="Black" WidthRequest="460" HeightRequest="775">
+            <HorizontalStackLayout Padding="10">
+                <Label x:Name="calculatorBody" Text="1000" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="50" WidthRequest="440" HeightRequest="100" Margin="0, 0, 10, 0" BackgroundColor="LightSlateGrey"></Label>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Padding="15">
+                <Button x:Name="clearButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="AC" TextColor="Black" BackgroundColor="LightGray" FontSize="50" Clicked="clearButton_Clicked"></Button>
+                <Button x:Name="flipSignButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="+/-" TextColor="Black" BackgroundColor="LightGray" FontSize="50" Clicked="flipSignButton_Clicked"></Button>
+                <Button x:Name="percentButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="%" TextColor="Black" BackgroundColor="LightGray" FontSize="50" Clicked="percentButton_Clicked"></Button>
+                <Button x:Name="divideButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="÷" TextColor="White" BackgroundColor="Orange"  FontSize="50" Clicked="divideButton_Clicked"></Button>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Padding="15">
+                <Button x:Name="sevenButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="7" TextColor="White" BackgroundColor="DimGrey"  FontSize="50" Clicked="sevenButton_Clicked"></Button>
+                <Button x:Name="eightButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="8" TextColor="White" BackgroundColor="DimGrey"  FontSize="50" Clicked="eightButton_Clicked"></Button>
+                <Button x:Name="nineButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="9" TextColor="White" BackgroundColor="DimGrey"  FontSize="50" Clicked="nineButton_Clicked"></Button>
+                <Button x:Name="multiplicationButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="X" TextColor="White" BackgroundColor="Orange"  FontSize="50" Clicked="multiplicationButton_Clicked"></Button>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Padding="15">
+                <Button x:Name="fourButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="4" TextColor="White" BackgroundColor="DimGrey"  FontSize="50" Clicked="fourButton_Clicked"></Button>
+                <Button x:Name="fiveButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="5" TextColor="White" BackgroundColor="DimGrey"  FontSize="50" Clicked="fiveButton_Clicked"></Button>
+                <Button x:Name="sixButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="6" TextColor="White" BackgroundColor="DimGrey"  FontSize="50" Clicked="sixButton_Clicked"></Button>
+                <Button x:Name="subtractionButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="-" TextColor="White" BackgroundColor="Orange"  FontSize="50" Clicked="subtractionButton_Clicked"></Button>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Padding="15">
+                <Button x:Name="oneButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="1" TextColor="White" BackgroundColor="DimGrey"  FontSize="50" Clicked="oneButton_Clicked"></Button>
+                <Button x:Name="twoButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="2" TextColor="White" BackgroundColor="DimGrey"  FontSize="50" Clicked="twoButton_Clicked"></Button>
+                <Button x:Name="threeButton"  WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="3" TextColor="White" BackgroundColor="DimGrey"  FontSize="50" Clicked="threeButton_Clicked"></Button>
+                <Button x:Name="additionButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="+" TextColor="White" BackgroundColor="Orange"  FontSize="50" Clicked="additionButton_Clicked"></Button>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout Padding="15">
+                <Button x:Name="zeroButton" WidthRequest="210" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="0" TextColor="White" BackgroundColor="DimGrey"  FontSize="50" Clicked="zeroButton_Clicked"></Button>
+                <Button x:Name="decimalPointButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="." TextColor="White" BackgroundColor="DimGrey"  FontSize="50" Clicked="decimalPointButton_Clicked"></Button>
+                <Button x:Name="equalsButton" WidthRequest="100" HeightRequest="100" Margin="0, 0, 10, 0" CornerRadius="50" Text="=" TextColor="White" BackgroundColor="Orange"  FontSize="50" Clicked="equalsButton_Clicked"></Button>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
